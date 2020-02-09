@@ -21,6 +21,6 @@ class Customer
   end
 
   def waiters
-    meals.select{|meal| meal.waiters}
+    meals.select{|meal| meal.waiter}
   end
 end
