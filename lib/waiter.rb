@@ -22,7 +22,7 @@ class Waiter
   end
 
   def best_tipper
-    binding.pry
-    meals.max{|meal| meal.tip}
+     best_tip = meals.map{|meal| meal.tip}.max
+     meals.find{|meal| meal.tip == best_tip}.customer
   end
 end
