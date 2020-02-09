@@ -3,6 +3,6 @@ class Waiter
 
   def initialize(name, age)
     @name = name
-    @age = age 
+    @age = age
   end
 end
